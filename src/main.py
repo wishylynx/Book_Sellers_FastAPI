@@ -24,7 +24,7 @@ async def lifespan(app: FastAPI):  # Рекомендуется теперь в�
     global_init()
     await create_db_and_tables()
     yield
-    # Запускается при остановке приложения
+    # Убрал удаление базы данных
     # await delete_db_and_tables()
 
 
